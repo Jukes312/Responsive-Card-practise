@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(10, 12, 27);
+  height: 100%;
+}
+
+/*Grid*/
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Card*/
+
+.card {
+  border-radius: 1rem;
+  background-color: rgb(28, 25, 56);
+  text-align: center;
+  overflow: hidden;
+  max-width: 90rem;
+  margin: 30rem auto;
+}
+
+.card__info {
+  padding: 2rem 2rem;
+}
+
+.card-info__heading {
+  color: white;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.card-info__info {
+  color: rgb(132, 131, 150);
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.card-stats__info {
+  color: rgb(132, 131, 150);
+  font-size: 1rem;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-stats__heading {
+  color: white;
+  font-size: 2rem;
+}
+
+span {
+  color: rgb(143, 79, 181);
+}
+
+@media screen and (min-width: 768px) {
+  .card__img-contain {
+    order: 2;
+  }
+}
